@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Get user information</legend><br>
+        <form action="/file_to_get_users_info_.html" method="get" >
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username"> <br><br>
+            <label for="password">Password:</label> 
+            <input type="password" id="password"name=password minlength="5" maxlength="10" required><br><br>
+            <label for="gender">Gender</label><br>
+
+            <input type="radio" name="gender" value="Male" required> Male <br>
+            <input type="radio" name="gender" value="Female"> Female<br>
+            <input type="radio" name="gender" value="Other"> Other<br><br>
+
+            <label for="Additional_comments">Additional comments</label><br>
+            <textarea id="comments" name="comments"></textarea><br><br>
+
+            <label for="country">Country of residence</label>
+            <select name="country" id="country" required>
+                <option value="">Select a country</option>
+                <option value="colombia">Colombia</option>
+                <option value="eeuu">Estados Unidos</option>
+                <option value="españa">España</option><br><br>
+            </select><br><br>
+
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            
+            
+
+
+        </form>
+    </fieldset>
+</body>
+</html>
